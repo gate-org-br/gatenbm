@@ -20,6 +20,7 @@ public abstract class ResourceLinkProvider extends LinkProvider
 
 		String name = self.getParent().getPath()
 			.replace("src/main/java", "src/main/resources")
+			.replace("src/test/java", "src/test/resources")
 			+ File.separatorChar + resourceName;
 
 		File resource = new File(name);
