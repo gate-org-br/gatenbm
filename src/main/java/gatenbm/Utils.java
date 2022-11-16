@@ -27,6 +27,7 @@ public class Utils
 	{
 		try
 		{
+
 			DataObject fileDO = DataObject.find(fileToOpen);
 			if (fileDO == null)
 				throw new FileNotFoundException();
